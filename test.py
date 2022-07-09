@@ -5,21 +5,20 @@ event_string = '''
 {
   "events": [
     {
-      "event": "Puppet show",
+        "event": "Puppet show",
         "time": 1330
     },
     {  
-      "event": "Spectacle du Marionette",
+        "event": "Spectacle du Marionette",
         "time": 1500
-    },
-    {
-      "event": "Communication between Technology and Information"
-       "time":06h30
-      }
+    }
   ] 
 }
 '''
 
 data = json.loads(event_string)
 
-print(data)
+for event in data['events']:
+  del event['time']
+
+print(data['events'])
