@@ -1,4 +1,55 @@
+import json
+
+event_string = '''
 {
-  "event": "Puppet show
-  "time": "13h30
-}
+  "events": [
+    {
+        "event": "Puppet show
+        "time": 13h30
+      },
+      {
+        "event": "Communication between Technology and Information"
+        "time":06h30
+      },
+      {  
+        "event": "Spectacle du Marionette"
+        "time": 15h
+      }
+    ] 
+  }
+  
+  data = json.load(event_string)
+  print(type(data[events]))
+  print(data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+event_string= '''
+events
+  {
+    "events": [
+      {
+      "event": "Puppet show
+      "time": 13h30
+      },
+      {"event": "Communication between Technology and Information"
+       "time":06h30
+      }
+      ###
