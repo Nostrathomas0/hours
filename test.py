@@ -22,3 +22,4 @@ for event in data['events']:
   del event['time']
 
 print(data['events'])
+
